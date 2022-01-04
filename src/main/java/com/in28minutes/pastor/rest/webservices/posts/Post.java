@@ -8,6 +8,7 @@ public class Post {
 	private Integer userId;
 	private Date dateOfPost;
 	private String postBody;
+	//Repository name changed - commit test
 
 	public Integer getId() {
 		return Id;
