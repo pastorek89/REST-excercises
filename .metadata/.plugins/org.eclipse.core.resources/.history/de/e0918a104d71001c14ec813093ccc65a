@@ -1,0 +1,5 @@
+package com.in28minutes.pastor.rest.webservices.versioning;
+
+public class PersonV1 {
+
+}
