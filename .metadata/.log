@@ -5989,3 +5989,18 @@ java.net.UnknownHostException: Nieznany host (vaadin.com)
 
 !ENTRY com.vaadin.designer2 1 0 2022-01-10 14:56:59.989
 !MESSAGE Save JSON notifications content to cache file C:\Projekty Eclipse\Ciapasy\.metadata\.plugins\com.vaadin.integration.eclipse\notifications-cache.json
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-10 16:56:31.652
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-10 16:56:31.671
+!MESSAGE classpath=88 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-10 16:56:31.675
+!MESSAGE buffering callback sts4.classpath.rYhdnjEo jpa-In-10-steps false 88
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-10 16:56:31.676
+!MESSAGE executing callback sts4.classpath.rYhdnjEo 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-01-10 16:56:31.698
+!MESSAGE executing callback sts4.classpath.rYhdnjEo SUCCESS [done]
