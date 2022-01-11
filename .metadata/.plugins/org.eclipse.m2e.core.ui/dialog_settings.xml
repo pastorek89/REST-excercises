@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Projekty Eclipse\Ciapasy\jpa-In-10-steps"/>
 			<item value="C:\Aplikacja\flow-crm-tutorial"/>
 			<item value="C:\Projekty Eclipse\Ciapasy\restful-web-services"/>
 		</list>

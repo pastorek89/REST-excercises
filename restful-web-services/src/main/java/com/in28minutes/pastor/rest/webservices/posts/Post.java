@@ -1,57 +1,63 @@
 package com.in28minutes.pastor.rest.webservices.posts;
 
-import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.in28minutes.pastor.rest.webservices.user.User;
+
+@Entity
 public class Post {
 
+	@Id
+	@GeneratedValue
 	private Integer Id;
-	private Integer userId;
-	private Date dateOfPost;
-	private String postBody;
+	private String description;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JsonIgnore
+	private User user;	
+
+	public Post() {
+		super();
+	}
+
+	public Post(Integer id, String description) {
+		super();
+		Id = id;
+		this.description = description;
+	}
 
 	public Integer getId() {
 		return Id;
-	}
-
-	public Post(Integer id, Integer userId, Date dateOfPost, String postBody) {
-		super();
-		Id = id;
-		this.userId = userId;
-		this.dateOfPost = dateOfPost;
-		this.postBody = postBody;
 	}
 
 	public void setId(Integer id) {
 		Id = id;
 	}
 
-	public Integer getUserId() {
-		return userId;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setUserId(Integer userId) {
-		this.userId = userId;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
-	public Date getDateOfPost() {
-		return dateOfPost;
+	public User getUser() {
+		return user;
 	}
 
-	public void setDateOfPost(Date dateOfPost) {
-		this.dateOfPost = dateOfPost;
-	}
-
-	public String getPostBody() {
-		return postBody;
-	}
-
-	public void setPostBody(String postBody) {
-		this.postBody = postBody;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	@Override
 	public String toString() {
-		return "Post [Id=" + Id + ", userId=" + userId + ", dateOfPost=" + dateOfPost + ", postBody=" + postBody + "]";
+		return "Post [Id=" + Id + ", description=" + description + ", user=" + user + "]";
 	}
 
 }
